@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+       backgroundImage: {
+        'hero-pat': "url(/10/hero.png.jpg)"
+       },
+       fontFamily: {
+        'inter': ['inter',]
+       }
+    },
   },
   plugins: [],
 }
