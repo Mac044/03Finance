@@ -1,9 +1,11 @@
+import Card from "../components/card"
 import Navbar from "../components/navbar"
 import '../index.css'
 
 const Home = () => {
   return (
-    <div>
+    <>
+        <div>
         <Navbar/>
        <div className=" w-full h-96 px-40">
        <div className="bg-[url(/10/hero.png.jpg)] w-auto h-96 bg-no-repeat py-96 bg-right-top relative"> </div>
@@ -14,7 +16,7 @@ const Home = () => {
        </div>
        {/* courses stundents and teachers */}
        <div className=" px-48">
-       <div className=" w-full h-24 bg-slate-400 mt-36 flex justify-around pt-3">
+       <div className=" w-full h-24 bg-slate-100 mt-36 flex justify-around pt-3">
         <div className="grid grid-rows-3 grid-flow-col gap-2">
           <img className="row-span-3" src="/13/courses.jpg" alt="" />
           <h3 className="col-span-2 text-blue-800">10+</h3>
@@ -32,8 +34,10 @@ const Home = () => {
         </div>
        </div>
        </div>
-
     </div>
+    <Card/>
+    </>
+
   )
 }
 
