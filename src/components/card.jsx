@@ -8,11 +8,13 @@ import { CiClock2 } from "react-icons/ci";
 
 const Card = () => {
   return (
-    <div className=' bg-slate-100 mt-16 '>
-         <h3 className=' pl-36 absolute'>Popular Courses</h3>
-         <div className=' relative -ml-32'><PiNumberCircleThreeThin size={400} color=''/>
+    <div className=' lg:bg-slate-100 mt-16'>
+       <div className=' pt-10 pl-44'> 
+         <h1 className=' text-base'>Popular Courses</h1>
          </div>
-         <div className=' grid grid-cols-4 gap-4 px-52 py-10'>
+         {/* <div className=' relative -ml-64 -mb-96 -z-0'><PiNumberCircleThreeThin size={600} color=''/>
+         </div> */}
+         <div className=' grid grid-cols-2 lg:grid-cols-4 gap-4 px-52 py-10 z-40'>
         <div className=' rounded-lg h-80 border-white border-solid border-8 bg-white'>
             <img src="/14/course1.jpg" alt="" />
             <p className=' text-green-300 text-right'>Free*</p>
@@ -61,7 +63,7 @@ const Card = () => {
                 </div>
             </div>
         </div>
-        <div className='rounded-lg h-80  border-white border-solid border-8 bg-white'>
+        <div className='rounded-lg h-80 border-white border-solid border-8 bg-white'>
             <img src="/15/course3.jpg" alt="" />
             <p className='  text-red-500 text-right'>Paid*</p>
             <h3>Understanding the Concept of Blockchain Technology</h3>
@@ -123,8 +125,6 @@ const Card = () => {
             <p className=' text-xs mt-2'>This course introduces the fundamental concepts of Blockchain technology.</p>
         </div>
     </div>
-
-     
     </div>
 
   )

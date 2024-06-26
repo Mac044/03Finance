@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { PiNumberCircleThreeThin } from "react-icons/pi";
+
 export default {
   content: [
     "./index.html",
@@ -9,11 +11,15 @@ export default {
        backgroundImage: {
         'hero-pat': "url(/10/hero.png.jpg)",
         'hero-pat2': "url(/17/Vector.jpg)",
-        'hero-pat3': "url(/18/circle.jpg)"
+        'hero-pat3': "url(/18/circle.jpg)",
+        'hero-pat4' : "url(/19/communities.jpg)"
        },
-       fontFamily: {
-        'inter': ['inter',]
-       }
+
+      container: {
+      maxWidth: {
+        md: '934px'
+      }
+      }
     },
   },
   plugins: [],
