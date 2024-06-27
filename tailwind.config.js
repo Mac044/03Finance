@@ -14,12 +14,6 @@ export default {
         'hero-pat3': "url(/18/circle.jpg)",
         'hero-pat4' : "url(/19/communities.jpg)"
        },
-
-      container: {
-      maxWidth: {
-        md: '934px'
-      }
-      }
     },
   },
   plugins: [],
