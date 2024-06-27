@@ -1,4 +1,3 @@
-import { PiNumberCircleThreeThin } from "react-icons/pi";
 import { IoPersonOutline } from "react-icons/io5";
 import { PiGraduationCapThin } from "react-icons/pi";
 import { CiClock2 } from "react-icons/ci";
@@ -7,7 +6,7 @@ import { CiClock2 } from "react-icons/ci";
 const Course = ({name, description, image, intructor, free, noOfStudents, duration, numberOfTutors}) => {
 
   return (
-    <div className=' lg:bg-slate-100 mt-16'>
+    <div>
       <div>
      <div className='rounded-lg border-white border-solid border-8 bg-white'>
          <img src= {image} alt="" />
