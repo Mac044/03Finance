@@ -2,7 +2,7 @@
 const Login = () => {
   return (
     <div>
-        <button className="border-blue-900 bg-blue-600 rounded-none p-2 text-white">Login</button>
+        <button className=" lg:border-blue-900 lg:bg-blue-600 lg:rounded-none lg:p-2 lg:text-white">Login</button>
     </div>
   )
 }
