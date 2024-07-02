@@ -19,6 +19,7 @@ const Navbar = () => {
             </ul>
             {/* button */}
             <span className=" hidden lg:flex lg:gap-3 lg:gap-md lg:justify-end">
+                <div className=" w-0.5 h-11 bg-slate-400"></div>
                 <SignIn/>
                 <p className=" lg:hidden">/</p>
                 <Login/>
