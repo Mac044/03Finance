@@ -33,16 +33,17 @@ const Community = () => {
                     Twitter
                     </button>
                     <button className='rounded-lg border-solid w-52 h-14 bg-white flex justify-around pt-4'>
-                    <CiFacebook color='blue'/>
+                    <CiFacebook color='blue' size={20}/>
                     Facebook
                     </button>
             </div>
             <img className=' lg:w-64 lg:h-64' src="/19/communities.jpg" alt="" />
         </div>
-        <div className=' p-10'>
+        <div className=' p-10 relative'>
         <h1 className=' lg:text-3xl text-2xl text-center'> DONT WANT TO MISS OUT ON UPDATES?</h1>
         <p className=' text-center lg:text-xl'>Subscribe to our newsletter and get updated news on tokens, coins and other finance news</p>
         <div className=' lg:ml-12 pt-5'>
+        <p className='  lg:h-32 lg:w-32 lg:rounded-full lg:bg-blue-800 absolute hidden lg:block lg:-mt-14  lg:ml-10'></p>
         <input className=' lg:ml-96 pl-5 h-10 lg:w-96' type="email" placeholder='Email Address' name="your email" id="" />
          <button className='w-36 h-10 bg-blue-600 text-white'>Subscribe</button>
         </div>
