@@ -10,13 +10,15 @@ const Navbar = () => {
     <div>
         <nav className=" flex justify-between p-2 lg:p-o lg:flex lg:items-center lg:justify-between lg:gap lg:px-40 lg:py-10">
             <img src="/09/link.jpg" alt="" />
-            <ul className=" hidden lg:flex lg:justify-center lg:gap-7 lg:text-blue-800">
-                <li>Home</li>
-                <li>About</li>
-                <li>Courses</li>
-                <li>Contact</li>
-                <li>Events</li>
-            </ul>
+          <ul className=" hidden lg:flex lg:justify-center lg:gap-7 lg:text-blue-800">
+            <li>Home</li>
+            <li>
+            <Link to="/src/pages/about.jsx">About</Link>
+            </li>
+            <li>Courses</li>
+            <li>Contact</li>
+            <li>Events</li>
+          </ul>
             {/* button */}
             <span className=" hidden lg:flex lg:gap-3 lg:gap-md lg:justify-end">
                 <div className=" w-0.5 h-11 bg-slate-400"></div>
@@ -25,7 +27,9 @@ const Navbar = () => {
                 <Login/>
             </span>
             <div className=" lg:hidden">
-              <RxHamburgerMenu />
+             <Link to="/src/pages/navbar.jsx"> 
+                 <RxHamburgerMenu />
+             </Link>
             </div>
         </nav>
     </div>

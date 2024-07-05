@@ -14,7 +14,7 @@ const Footer = () => {
             <img src="/03finance.jpg" alt="" />
          </div>
          <div>
-            <h1 className="lg:text-xl mb-2">QUICK LINKS</h1>
+            <h1 className="lg:text-xl mb-2 mt-5">QUICK LINKS</h1>
             <ul className=" list-disc">
                 <li>About us</li>
                 <li>Courses</li>
@@ -23,7 +23,7 @@ const Footer = () => {
             </ul>
          </div>
           <div>
-            <h1 className=" lg:text-xl mb-2">CONTACT INFO</h1>
+            <h1 className=" lg:text-xl mb-2 mt-5">CONTACT INFO</h1>
             <div className="lg:flex lg:gap-2 flex gap-2">
             <BsTelephoneFill />
             <p>08178624095</p>

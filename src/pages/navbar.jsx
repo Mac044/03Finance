@@ -1,16 +1,16 @@
 import React from 'react'
-import Navbar from '../components/navbar'
-import { MdCancelPresentation } from "react-icons/md";
 
 
-const Navbar2
- = () => {
+const Navbar2 = () => {
   return (
     <div>
-        <div>
-            <MdCancelPresentation />
-        </div>
-        <Navbar/>
+      <ul className=' text-blue-500 text-center'>
+        <li>Home</li>
+        <li>About</li>
+        <li>Courses</li>
+        <li>Contact</li>
+        <li>Events</li>
+      </ul>
     </div>
   )
 }
