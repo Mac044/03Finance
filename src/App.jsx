@@ -2,18 +2,17 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './pages/home';
 import About from './pages/about';
+import Navbar from './components/navbar';
 
 
 function App() {
   return (
-    <div>
        <Routes>
-          <Route path='/' element= {<Home/>} />
-          <Route path='/src/pages/about.jsx' element={<About/>} />
+          <Route path='/' element= {<Navbar/>}>
+          <Route exact path='/' element= {<Home/>} />
+          <Route path='/about' element={<About/>} />
+          </Route>
        </Routes>
-    </div>
- 
-
   )
 }
 

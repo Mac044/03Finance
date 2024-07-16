@@ -1,6 +1,7 @@
 import { IoPersonOutline } from "react-icons/io5";
 import { PiGraduationCapThin } from "react-icons/pi";
 import { CiClock2 } from "react-icons/ci";
+import Navbar2 from "../pages/navbar";
 
 
 const Course = ({name, description, image, intructor, free, noOfStudents, duration, numberOfTutors}) => {
@@ -10,7 +11,7 @@ const Course = ({name, description, image, intructor, free, noOfStudents, durati
       <div>
      <div className='rounded-lg border-white border-solid border-8 bg-white'>
          <img src= {image} alt="" />
-         <p className=' text-green-300 text-right'> {free}  </p>
+         <p className=' text-green-300 text-right'> </p>
          <h3>{name}3</h3>
          <p className=' text-xs mt-2'> {description} </p>
          <div className=' flex justify-end mt-1 items-center'>

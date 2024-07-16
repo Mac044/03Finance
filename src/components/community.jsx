@@ -4,11 +4,6 @@ import { FaDiscord } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { CiFacebook } from "react-icons/ci";
-import { PiPlaceholder } from 'react-icons/pi';
-
-
-
-
 
 
 const Community = () => {

@@ -1,4 +1,3 @@
-import { RxHamburgerMenu } from "react-icons/rx";
 import Footer from "../components/footer";
 
 
@@ -6,16 +5,10 @@ import Footer from "../components/footer";
 const About = () => {
   return (
     <div>
-       <div className=" flex justify-between"> 
-         <img src="/public/03finblue.jpg" alt="" />
-         <div className=" lg:hidden">
-         <RxHamburgerMenu color="blue"/>
-         </div>
-       </div>
        <div>
         <h1 className=" text-2xl text-center mt-10">About Us</h1>
         <div>
-        <img className=" lg:ml-96 lg:pl-52 ml-24" src="/public/abt.jpg" alt="" />
+        <img className=" lg:ml-96 lg:pl-52 ml-24" src="abt.jpg" alt="" />
         <div>
         <p className=" text-center mt-10"> O3 Finance School is an educational institute that is committed to providing financial education for all and sundry in African countries, starting with Nigeria.</p>
         <p className=" text-center mt-10">  Our goal is to empower people with the knowledge and skills they need to create, manage and sustain their wealth by leveraging on prevailing technological innovations.</p>
