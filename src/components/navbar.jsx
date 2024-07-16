@@ -4,14 +4,17 @@ import SignIn from "./signIn"
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
+import { MdOutlineCancel } from "react-icons/md";
+import Navbar2 from "../pages/navbar";
+
 
 
 const Navbar = () => {
 
-  const [isOpen, setIsOpen] = useState("Navbar");
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavBar = () => {
-    setIsOpen("Navabar")
+    setIsOpen(!isOpen)
  
   }
 
@@ -32,6 +35,10 @@ const Navbar = () => {
             <li>Contact</li>
             <li>Events</li>
           </ul>
+           {/* mobile navbar */}
+          <div className=" absolute z-10 backdrop-blur-sm w-96 mb-10">
+          { isOpen && <Navbar2/>}
+          </div>
             {/* button */}
             <span className=" hidden lg:flex lg:gap-3 lg:gap-md lg:justify-end">
                 <div className=" w-0.5 h-11 bg-slate-400"></div>
@@ -41,15 +48,12 @@ const Navbar = () => {
             </span>
             <p className=" lg:hidden">{setIsOpen}</p>
             <button className="lg:hidden" onClick={toggleNavBar}>
-                 <RxHamburgerMenu/>
+              { isOpen ? <MdOutlineCancel /> : <RxHamburgerMenu/> }
             </button>
         </nav>
         <Outlet/>
     </div>
   )
 }
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<Navbar/>)
 
 export default Navbar
